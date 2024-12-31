@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siddhartha Upreti - Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #121212;
+            color: #e0e0e0;
+            overflow-x: hidden;
+            padding-bottom: 80px; /* Added padding to ensure footer doesn't overlap content */
+        }
+        header {
+            background: linear-gradient(135deg, #2b5ced, #548ae7);
+            color: #fff;
+            padding: 40px 20px;
+            text-align: center;
+            position: relative;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+        header p {
+            margin: 10px 0;
+            font-size: 1.3em;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 5px solid #fff;
+            margin: 20px auto 0;
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .contact {
+            background-color: #1e1e2f;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            display: inline-block;
+        }
+        .contact p {
+            margin: 10px 0;
+            font-size: 1.1em;
+        }
+        .art-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .art-gallery img {
+            width: 100%;
+            max-width: 250px;
+            height: auto;
+            aspect-ratio: 1 / 1;
+            object-fit: cover;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+            transition: transform 0.3s;
+        }
+        .art-gallery img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #2886f2;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 10px;
+            color: #3156fa;
+            text-decoration: none;
+            font-size: 1.5em;
+            display: inline-block;
+        }
+        .social-links a:hover {
+            color: #50afde;
+        }
+        @media screen and (max-width: 768px) {
+            header h1 {
+                font-size: 2.5em;
+            }
+            .art-gallery img {
+                max-width: 150px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section with Cool Animation and Profile Picture -->
+    <header>
+        <img src="profile.jpg" alt="Siddhartha Upreti" class="profile-pic">
+        <h1>Siddhartha Upreti</h1>
+        <p>Artist & Aspiring Civil Engineer</p>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#art">Pictures</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi,I am Siddhartha Upreti. As a creative and passionate civil engineering student, I am dedicated to designing and constructing innovative infrastructure solutions. With strong leadership skills, a focus on workmanship, and a commitment to excellence, I thrive in both individual and team-oriented projects. I am particularly interested in sustainable design, construction management, and improving urban infrastructure to meet the needs of tomorrow. Eager to apply my technical knowledge and creativity, I am always seeking opportunities to grow, collaborate, and make a meaningful impact in the civil engineering field.</p>
+    </section>
+
+    <!-- Art Gallery Section -->
+    <section id="art">
+        <h2> Moments of my life.</h2>
+        <div class="art-gallery">
+            <!-- Placeholder for art images -->
+            <img src="art1.jpg" alt="Art Piece 1">
+            <img src="art2.jpg" alt="Art Piece 2">
+            <img src="art3.jpg" alt="Art Piece 3">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact">
+            <p><strong>Email:</strong> <a href="mailto:sidartupreti@gmail.com">sidartupreti@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+9779863450869">9863450869</a></p>
+            <p><strong>Address:</strong> Kathmandu,Nepal</p>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/siddhartha-upreti-0317881b3/" target="_blank">LinkedIn</a>
+            <a href="https://www.instagram.com/sidartistt/" target="_blank">Instagram</a>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Siddhartha Upreti. All rights reserved.</p>
+    </footer>
+</body>
+</html>
